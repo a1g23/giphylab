@@ -27,10 +27,12 @@ const getGiph = async () => {
 
   //create the new giph url by drilling into the url of the object
 
-  const finalGiph = data.data.url
+  const fixedheightGiph = data.data.images.fixed_height.url
+  console.log(fixedheightGiph)
+  
 
   //update the 
-  setGiph(finalGiph)
+  setGiph(fixedheightGiph)
 }
 //render a random gif url to start.. 
 useEffect(() => {

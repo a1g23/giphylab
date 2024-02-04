@@ -2,7 +2,7 @@ function Giph(props) {
     return (
       <div className="Giph">
         
-        {props.giph}
+        <img src={props.giph}/>
       </div>
     );
   }
